@@ -1,0 +1,17 @@
+.my-balance {
+    background-color: var(--clr-primary-400);
+    color: var(--clr-neutral-100);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.my-balance__info {
+    display: grid;
+    gap: 0.4em;
+}
+
+.my-balance__value {
+    font-size: var(--fs-title);
+    font-weight: var(--fw-bold);
+}

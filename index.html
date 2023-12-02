@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <link rel="stylesheet" href="styles/setup.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/font-family.css">
+
+  <link rel="stylesheet" href="styles/components/my-balance.css">
+  <link rel="stylesheet" href="styles/components/spending.css">
+
+</head>
+<body>
+
+  <main class="main">
+    <section class="my-balance">
+      <div class="my-balance__info">
+        <h1 class="label">My balance</h1>
+        <b class="my-balance__value">$921.48</b>
+      </div>
+
+      <img src="images/logo.svg" alt="" class="my-balance__img">
+    </section>
+
+    <section class="spending">
+      <h2 class="title">Spending - Last 7 days</h2>
+
+      <div class="spending__container">
+
+        <div class="spending__chart">
+
+          <div class="chart__data">
+            <div class="chart__value"></div>
+            mon
+          </div>
+
+          <div class="chart__data">
+            <div class="chart__value"></div>
+            tue
+          </div>
+
+          <div class="chart__data">
+            <div class="chart__value chart__value--highlighted"></div>
+            wed
+          </div>
+
+          <div class="chart__data">
+            <div class="chart__value"></div>
+            thu
+          </div>
+
+          <div class="chart__data">
+            <div class="chart__value"></div>
+            fri
+          </div>
+
+          <div class="chart__data">
+            <div class="chart__value"></div>
+            sat
+          </div>
+
+          <div class="chart__data">
+            <div class="chart__value"></div>
+            sun
+          </div>
+          
+        </div>
+
+
+        <div class="spending__line-separator"></div>
+
+
+        <div class="spending__overview">
+
+          <div class="spending__total">
+            <p class="paragraph">Total this month</p>
+            <b class="spending__total-value">$478.33</b>
+          </div>
+
+          <div class="spending__last-month">
+            <b class="spending__last-month-percentage-value">+2.4%</b>
+            <p class="paragraph">from last month</p>
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </section>
+  </main>
+
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Josué Zalazar</a>.
+  </div>
+</body>
+</html>

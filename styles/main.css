@@ -1,0 +1,11 @@
+.main {
+    width: min(80%, 400px);
+    display: grid;
+    gap: 1em;
+}
+
+.main > * {
+    padding: 1.5em;
+    border-radius: 10px;
+}
+
