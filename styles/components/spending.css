@@ -14,7 +14,7 @@
     min-height: 160px;
 }
 
-.chart__data {
+.chart__element {
     display: grid;
     grid-template-rows: 1fr auto;
     gap: 0.2em;
@@ -23,7 +23,6 @@
 
 .chart__value {
     width: 100%;
-    height: 40%;
     background-color: var(--clr-primary-400);
     align-self: flex-end;
 
@@ -39,7 +38,7 @@
     cursor: pointer;
 }
 
-.chart__value:hover::before {
+/* .chart__value:hover::before {
     content: '$52.36';
     font-size: var(--fs-body);
     color: var(--clr-neutral-100);
@@ -49,8 +48,40 @@
     top: -40px;
     left: -8px;
     border-radius: 4px;
+    z-index: 10;
+} */
+
+.tooltip {
+    font-size: var(--fs-body);
+    color: var(--clr-neutral-100);
+    background-color: var(--clr-neutral-900);
+    padding: .5em;
+    position: absolute;
+    top: -42px;
+    left: -14px;
+    border-radius: 4px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 40ms ease-in;
 }
 
+.chart__value:hover .tooltip {
+    opacity: 100%;
+    animation: tooltipShow 200ms ease-in;
+}
+
+@keyframes tooltipShow {
+    0% {
+        opacity: 0;
+        translate: 0 8px;
+        scale: 0;
+    }
+
+    100% {
+        opacity: 100%;
+        scale: 1;
+    }
+}
 
 
 
