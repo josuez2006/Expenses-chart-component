@@ -58,7 +58,8 @@
     padding: .5em;
     position: absolute;
     top: -42px;
-    left: -14px;
+    left: 50%;
+    transform: translate(-50%);
     border-radius: 4px;
     z-index: 1;
     opacity: 0;
